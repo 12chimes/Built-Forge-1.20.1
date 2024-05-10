@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_oak_log": {
+    "has_bamboo_shakes": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stripped_oak_log"
+              "built:bamboo_shakes"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "built:oak_compact_planks"
+        "recipe": "built:bamboo_shakes_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_stripped_oak_log",
+      "has_bamboo_shakes",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "built:oak_compact_planks"
+      "built:bamboo_shakes_stairs"
     ]
   },
   "sends_telemetry_event": false

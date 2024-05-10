@@ -22,6 +22,62 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.OAK_COMPACT_PLANKS.get(),
                         ModBlocks.OAK_SHAKES.get(),
-                        ModBlocks.ACACIA_COMPACT_PLANKS.get());
+                        ModBlocks.OAK_SHAKES_STAIRS.get(),
+                        ModBlocks.OAK_SHAKES_SLAB.get(),
+
+                        ModBlocks.SPRUCE_COMPACT_PLANKS.get(),
+                        ModBlocks.SPRUCE_SHAKES.get(),
+                        ModBlocks.SPRUCE_SHAKES_STAIRS.get(),
+                        ModBlocks.SPRUCE_SHAKES_SLAB.get(),
+
+                        ModBlocks.BIRCH_COMPACT_PLANKS.get(),
+                        ModBlocks.BIRCH_SHAKES.get(),
+                        ModBlocks.BIRCH_SHAKES_STAIRS.get(),
+                        ModBlocks.BIRCH_SHAKES_SLAB.get(),
+
+                        ModBlocks.JUNGLE_COMPACT_PLANKS.get(),
+                        ModBlocks.JUNGLE_SHAKES.get(),
+                        ModBlocks.JUNGLE_SHAKES_STAIRS.get(),
+                        ModBlocks.JUNGLE_SHAKES_SLAB.get(),
+
+                        ModBlocks.ACACIA_COMPACT_PLANKS.get(),
+                        ModBlocks.ACACIA_SHAKES.get(),
+                        ModBlocks.ACACIA_SHAKES_STAIRS.get(),
+                        ModBlocks.ACACIA_SHAKES_SLAB.get(),
+
+                        ModBlocks.DARK_OAK_COMPACT_PLANKS.get(),
+                        ModBlocks.DARK_OAK_SHAKES.get(),
+                        ModBlocks.DARK_OAK_SHAKES_STAIRS.get(),
+                        ModBlocks.DARK_OAK_SHAKES_SLAB.get(),
+
+                        ModBlocks.MANGROVE_COMPACT_PLANKS.get(),
+                        ModBlocks.MANGROVE_SHAKES.get(),
+                        ModBlocks.MANGROVE_SHAKES_STAIRS.get(),
+                        ModBlocks.MANGROVE_SHAKES_SLAB.get(),
+
+                        ModBlocks.CHERRY_COMPACT_PLANKS.get(),
+                        ModBlocks.CHERRY_SHAKES.get(),
+                        ModBlocks.CHERRY_SHAKES_STAIRS.get(),
+                        ModBlocks.CHERRY_SHAKES_SLAB.get(),
+
+                        ModBlocks.BAMBOO_COMPACT_PLANKS.get(),
+                        ModBlocks.BAMBOO_SHAKES.get(),
+                        ModBlocks.BAMBOO_SHAKES_STAIRS.get(),
+                        ModBlocks.BAMBOO_SHAKES_SLAB.get(),
+
+                        ModBlocks.CRIMSON_COMPACT_PLANKS.get(),
+                        ModBlocks.CRIMSON_SHAKES.get(),
+                        ModBlocks.CRIMSON_SHAKES_STAIRS.get(),
+                        ModBlocks.CRIMSON_SHAKES_SLAB.get(),
+
+                        ModBlocks.WARPED_COMPACT_PLANKS.get(),
+                        ModBlocks.WARPED_SHAKES.get(),
+                        ModBlocks.WARPED_SHAKES_STAIRS.get(),
+                        ModBlocks.WARPED_SHAKES_SLAB.get()
+
+
+                        );
+
+
     }
 }
