@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "S": {
+      "item": "minecraft:stripped_oak_log"
+    }
+  },
+  "pattern": [
+    "S#",
+    "#S"
+  ],
+  "result": {
+    "count": 4,
+    "item": "built:oak_shakes"
+  },
+  "show_notification": true
+}
