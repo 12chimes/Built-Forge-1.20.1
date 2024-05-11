@@ -21,7 +21,32 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.OAK_COMPACT_PLANKS.get(),
-                        ModBlocks.OAK_SHAKES.get()
+                        ModBlocks.OAK_SHAKES.get(),
+                        ModBlocks.SPRUCE_COMPACT_PLANKS.get(),
+                        ModBlocks.SPRUCE_SHAKES.get(),
+                        ModBlocks.BIRCH_COMPACT_PLANKS.get(),
+                        ModBlocks.BIRCH_SHAKES.get(),
+                        ModBlocks.JUNGLE_COMPACT_PLANKS.get(),
+                        ModBlocks.JUNGLE_SHAKES.get(),
+                        ModBlocks.ACACIA_COMPACT_PLANKS.get(),
+                        ModBlocks.ACACIA_SHAKES.get(),
+                        ModBlocks.DARK_OAK_COMPACT_PLANKS.get(),
+                        ModBlocks.DARK_OAK_SHAKES.get(),
+                        ModBlocks.MANGROVE_COMPACT_PLANKS.get(),
+                        ModBlocks.MANGROVE_SHAKES.get(),
+                        ModBlocks.CHERRY_COMPACT_PLANKS.get(),
+                        ModBlocks.CHERRY_SHAKES.get(),
+                        ModBlocks.BAMBOO_COMPACT_PLANKS.get(),
+                        ModBlocks.BAMBOO_SHAKES.get(),
+                        ModBlocks.CRIMSON_COMPACT_PLANKS.get(),
+                        ModBlocks.CRIMSON_SHAKES.get(),
+                        ModBlocks.WARPED_COMPACT_PLANKS.get(),
+                        ModBlocks.WARPED_SHAKES.get(),
+
+                        ModBlocks.FRESH_BAMBOO_BLOCK.get(),
+                        ModBlocks.CUT_FRESH_BAMBOO.get(),
+                        ModBlocks.CUT_BAMBOO.get(),
+                        ModBlocks.CUT_STRIPPED_BAMBOO.get()
 
 
 
@@ -45,11 +70,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SUGARCRETE_BRICKS.get(),
                         ModBlocks.SUGARCRETE_BRICK_STAIRS.get(),
                         ModBlocks.SUGARCRETE_BRICK_SLAB.get()
-
-
-
-
-
                 );
 
         this.tag(BlockTags.WOODEN_STAIRS)
@@ -63,7 +83,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CHERRY_SHAKES_STAIRS.get(),
                         ModBlocks.BAMBOO_SHAKES_STAIRS.get(),
                         ModBlocks.CRIMSON_SHAKES_STAIRS.get(),
-                        ModBlocks.WARPED_SHAKES_STAIRS.get()
+                        ModBlocks.WARPED_SHAKES_STAIRS.get(),
+                        ModBlocks.CUT_FRESH_BAMBOO_STAIRS.get(),
+                        ModBlocks.CUT_BAMBOO_STAIRS.get(),
+                        ModBlocks.CUT_STRIPPED_BAMBOO_STAIRS.get()
                 );
 
         this.tag(BlockTags.WOODEN_SLABS)
@@ -77,7 +100,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CHERRY_SHAKES_SLAB.get(),
                         ModBlocks.BAMBOO_SHAKES_SLAB.get(),
                         ModBlocks.CRIMSON_SHAKES_SLAB.get(),
-                        ModBlocks.WARPED_SHAKES_SLAB.get()
+                        ModBlocks.WARPED_SHAKES_SLAB.get(),
+                        ModBlocks.CUT_FRESH_BAMBOO_SLAB.get(),
+                        ModBlocks.CUT_BAMBOO_SLAB.get(),
+                        ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get()
                 );
 
         this.tag(BlockTags.WALLS)

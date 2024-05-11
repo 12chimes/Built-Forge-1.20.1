@@ -1,5 +1,6 @@
 package net.truly.built.datagen;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.truly.built.Built;
 import net.truly.built.block.ModBlocks;
@@ -81,16 +82,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.WARPED_SHAKES_SLAB.get()), blockTexture(ModBlocks.WARPED_SHAKES.get()),
                 blockTexture(ModBlocks.WARPED_SHAKES.get()));
 
-
-
-
         blockWithItem(ModBlocks.CHUNKY_BRICKS);
         stairsBlock(((StairBlock) ModBlocks.CHUNKY_BRICK_STAIRS.get()), blockTexture(ModBlocks.CHUNKY_BRICKS.get()));
         slabBlock(((SlabBlock) ModBlocks.CHUNKY_BRICK_SLAB.get()), blockTexture(ModBlocks.CHUNKY_BRICKS.get()),
                 blockTexture(ModBlocks.CHUNKY_BRICKS.get()));
         wallBlock(((WallBlock) ModBlocks.CHUNKY_BRICK_WALL.get()), blockTexture(ModBlocks.CHUNKY_BRICKS.get()));
-
-
 
         blockWithItem(ModBlocks.TERRACOTTA_TRIM);
         blockWithItem(ModBlocks.WHITE_TERRACOTTA_TRIM);
@@ -109,8 +105,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PURPLE_TERRACOTTA_TRIM);
         blockWithItem(ModBlocks.PINK_TERRACOTTA_TRIM);
         blockWithItem(ModBlocks.MAGENTA_TERRACOTTA_TRIM);
-
-
 
         blockWithItem(ModBlocks.CUT_COBBLESTONE);
         stairsBlock(((StairBlock) ModBlocks.CUT_COBBLESTONE_STAIRS.get()), blockTexture(ModBlocks.CUT_COBBLESTONE.get()));
@@ -137,6 +131,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(((StairBlock) ModBlocks.SUGARCRETE_BRICK_STAIRS.get()), blockTexture(ModBlocks.SUGARCRETE_BRICKS.get()));
         slabBlock(((SlabBlock) ModBlocks.SUGARCRETE_BRICK_SLAB.get()), blockTexture(ModBlocks.SUGARCRETE_BRICKS.get()),
                 blockTexture(ModBlocks.SUGARCRETE_BRICKS.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.FRESH_BAMBOO_BLOCK.get()), blockTexture(ModBlocks.FRESH_BAMBOO_BLOCK.get()),
+                new ResourceLocation(Built.MOD_ID, "block/fresh_bamboo_block_top"));
+
+        blockWithItem(ModBlocks.CUT_FRESH_BAMBOO);
+        stairsBlock(((StairBlock) ModBlocks.CUT_FRESH_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_FRESH_BAMBOO.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_FRESH_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_FRESH_BAMBOO.get()),
+                blockTexture(ModBlocks.CUT_FRESH_BAMBOO.get()));
+
+        blockWithItem(ModBlocks.CUT_BAMBOO);
+        stairsBlock(((StairBlock) ModBlocks.CUT_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_BAMBOO.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_BAMBOO.get()),
+                blockTexture(ModBlocks.CUT_BAMBOO.get()));
+
+        blockWithItem(ModBlocks.CUT_STRIPPED_BAMBOO);
+        stairsBlock(((StairBlock) ModBlocks.CUT_STRIPPED_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO.get()),
+                blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO.get()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

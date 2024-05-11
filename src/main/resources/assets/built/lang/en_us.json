@@ -103,6 +103,20 @@
   "block.built.sugarcrete_brick_stairs": "Sugarcrete Brick Stairs",
   "block.built.sugarcrete_brick_slab": "Sugarcrete Brick Slab",
 
+  "block.built.fresh_bamboo_block": "Fresh Bamboo Block",
+
+  "block.built.cut_fresh_bamboo": "Cut Fresh Bamboo Block",
+  "block.built.cut_fresh_bamboo_stairs": "Cut Fresh Bamboo Stairs",
+  "block.built.cut_fresh_bamboo_slab": "Cut Fresh Bamboo Slab",
+
+  "block.built.cut_bamboo": "Cut Bamboo Block",
+  "block.built.cut_bamboo_stairs": "Cut Bamboo Stairs",
+  "block.built.cut_bamboo_slab": "Cut Bamboo Slab",
+
+  "block.built.cut_stripped_bamboo": "Cut Stripped Bamboo Block",
+  "block.built.cut_stripped_bamboo_stairs": "Cut Stripped Bamboo Stairs",
+  "block.built.cut_stripped_bamboo_slab": "Cut Stripped Bamboo Slab",
+
 
 
   "creativetab.built_tab": "Built"

@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-11T14:29:53.0850916	Loot Tables
+// 1.20.1	2024-05-11T15:33:14.0681891	Loot Tables
 570b0dd7c21073c70ca124449efa16c277b18b0a data/built/loot_tables/blocks/acacia_compact_planks.json
 d19c2f3fef099f7db0de3f1dffe918df87d4f34a data/built/loot_tables/blocks/acacia_shakes.json
 f96418af049e2ef30b1f70742b5da4f5a4e44e15 data/built/loot_tables/blocks/acacia_shakes_slab.json
@@ -39,6 +39,7 @@ caad953cfe7dcb43446b15e2a1b28274566b4c23 data/built/loot_tables/blocks/cyan_terr
 19156693dcbae2323c8eb25110b55b6a1933ae8b data/built/loot_tables/blocks/dark_oak_shakes.json
 4106adfe7ecfe93f14b91a5401dc1c1a5c672fde data/built/loot_tables/blocks/dark_oak_shakes_slab.json
 12818bdcd2b9264ec20d44ef42e9236fa0dbd698 data/built/loot_tables/blocks/dark_oak_shakes_stairs.json
+aa637db642fc7acfc5c350490282634feca7b65b data/built/loot_tables/blocks/fresh_bamboo_block.json
 dd2956d4b644ed9d50582276c22b250f3ee2c14e data/built/loot_tables/blocks/gray_terracotta_trim.json
 eef3a04943cc2e6b56b5bde0129e2d2af06afacb data/built/loot_tables/blocks/green_terracotta_trim.json
 158d372b7cc169bc8e3242a9363ba64c705e914c data/built/loot_tables/blocks/jungle_compact_planks.json

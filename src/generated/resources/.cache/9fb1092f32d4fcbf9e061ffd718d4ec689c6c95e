@@ -1,10 +1,11 @@
-// 1.20.1	2024-05-11T14:29:53.0870872	Recipes
+// 1.20.1	2024-05-11T15:33:14.0691873	Recipes
 665757b3448061bbcc8ebf9bebd5eaac665d88a5 data/built/advancements/recipes/building_blocks/carved_andesite.json
 218ee9a7478f32f7496144843ceffc001f9e560b data/built/advancements/recipes/building_blocks/carved_diorite.json
 86122d2f3166126cb09f0460e7dcd7ea19e210b1 data/built/advancements/recipes/building_blocks/carved_granite.json
 7bb0dc3108413376a6bf13cb2ee0c51e392ecf12 data/built/advancements/recipes/building_blocks/carved_stone.json
 63cbd2e52010138ae2e12c06323f0f9c87b30a6e data/built/advancements/recipes/building_blocks/chunky_bricks.json
 8cefd0e289d9a4db92b6cede91e59a42c2d1da4c data/built/advancements/recipes/building_blocks/cut_cobblestone.json
+d6ab4eb8e1ee8dc1a0339360095822c3d1e90e5c data/built/advancements/recipes/building_blocks/fresh_bamboo_block.json
 2638ac59246bc2ab7d2030e1f40335ec42807631 data/built/advancements/recipes/building_blocks/mossy_cut_cobblestone.json
 1bd51a7db4ecbf7ee8337a2f6f67391e6e39ef17 data/built/advancements/recipes/building_blocks/oak_compact_planks.json
 1ea365f730b5b640e6de5308dd5e3215f3c335e1 data/built/advancements/recipes/building_blocks/oak_shakes.json
@@ -16,6 +17,7 @@ fdc14a644cb7283b9b4796c6d95b14b55124d150 data/built/recipes/carved_granite.json
 cc7569961f618370d5c053effb933c422bb25c95 data/built/recipes/carved_stone.json
 711b52086d58f02041830a32493132b3628d513e data/built/recipes/chunky_bricks.json
 f48e5ea0c0f851a37e0cd4cce360233ff601112f data/built/recipes/cut_cobblestone.json
+8768ec186c24cc9449e3e164e951fa173900aacd data/built/recipes/fresh_bamboo_block.json
 8797b456b1827fec1277dc15f409bfdbae536083 data/built/recipes/mossy_cut_cobblestone.json
 f6e19fea2c8904187ed54ffb34df0fa131de1762 data/built/recipes/oak_compact_planks.json
 539200c34755cb2995f6268d65734cfbadcb89ac data/built/recipes/oak_shakes.json

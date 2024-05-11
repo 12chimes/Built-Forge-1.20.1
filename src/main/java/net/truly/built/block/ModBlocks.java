@@ -9,6 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.truly.built.Built;
+import net.truly.built.block.custom.ModFlammableRotatedPillarBlock;
 import net.truly.built.block.custom.ModFlammableWoodBlock;
 import net.truly.built.item.ModItems;
 
@@ -218,6 +219,35 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.NETHER_WART)));
     public static final RegistryObject<Block> SUGARCRETE_BRICK_SLAB = registerBlock("sugarcrete_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.NETHER_WART)));
+
+
+
+    public static final RegistryObject<Block> FRESH_BAMBOO_BLOCK = registerBlock("fresh_bamboo_block",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+
+    public static final RegistryObject<Block> CUT_FRESH_BAMBOO = registerBlock("cut_fresh_bamboo",
+            () -> new ModFlammableWoodBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+    public static final RegistryObject<Block> CUT_FRESH_BAMBOO_STAIRS = registerBlock("cut_fresh_bamboo_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_FRESH_BAMBOO.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+    public static final RegistryObject<Block> CUT_FRESH_BAMBOO_SLAB = registerBlock("cut_fresh_bamboo_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+
+    public static final RegistryObject<Block> CUT_BAMBOO = registerBlock("cut_bamboo",
+            () -> new ModFlammableWoodBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+    public static final RegistryObject<Block> CUT_BAMBOO_STAIRS = registerBlock("cut_bamboo_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_BAMBOO.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+    public static final RegistryObject<Block> CUT_BAMBOO_SLAB = registerBlock("cut_bamboo_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+
+    public static final RegistryObject<Block> CUT_STRIPPED_BAMBOO = registerBlock("cut_stripped_bamboo",
+            () -> new ModFlammableWoodBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+    public static final RegistryObject<Block> CUT_STRIPPED_BAMBOO_STAIRS = registerBlock("cut_stripped_bamboo_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_STRIPPED_BAMBOO.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
+    public static final RegistryObject<Block> CUT_STRIPPED_BAMBOO_SLAB = registerBlock("cut_stripped_bamboo_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_BLOCK)));
 
 
 
