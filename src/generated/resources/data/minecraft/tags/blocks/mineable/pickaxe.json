@@ -1,0 +1,20 @@
+{
+  "values": [
+    "built:chunky_bricks",
+    "built:chunky_brick_stairs",
+    "built:chunky_brick_slab",
+    "built:cut_cobblestone",
+    "built:cut_cobblestone_stairs",
+    "built:cut_cobblestone_slab",
+    "built:mossy_cut_cobblestone",
+    "built:mossy_cut_cobblestone_stairs",
+    "built:mossy_cut_cobblestone_slab",
+    "built:carved_stone",
+    "built:carved_granite",
+    "built:carved_diorite",
+    "built:carved_andesite",
+    "built:sugarcrete_bricks",
+    "built:sugarcrete_brick_stairs",
+    "built:sugarcrete_brick_slab"
+  ]
+}

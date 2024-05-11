@@ -54,6 +54,28 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         evenSimplerBlockItem(ModBlocks.WARPED_SHAKES_STAIRS);
         evenSimplerBlockItem(ModBlocks.WARPED_SHAKES_SLAB);
+
+
+
+        evenSimplerBlockItem(ModBlocks.CHUNKY_BRICK_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CHUNKY_BRICK_SLAB);
+        wallItem(ModBlocks.CHUNKY_BRICK_WALL, ModBlocks.CHUNKY_BRICKS);
+
+        evenSimplerBlockItem(ModBlocks.CUT_COBBLESTONE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CUT_COBBLESTONE_SLAB);
+        wallItem(ModBlocks.CUT_COBBLESTONE_WALL, ModBlocks.CUT_COBBLESTONE);
+
+        evenSimplerBlockItem(ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB);
+        wallItem(ModBlocks.MOSSY_CUT_COBBLESTONE_WALL, ModBlocks.MOSSY_CUT_COBBLESTONE);
+
+        evenSimplerBlockItem(ModBlocks.CARVED_STONE);
+        evenSimplerBlockItem(ModBlocks.CARVED_GRANITE);
+        evenSimplerBlockItem(ModBlocks.CARVED_DIORITE);
+        evenSimplerBlockItem(ModBlocks.CARVED_ANDESITE);
+
+        evenSimplerBlockItem(ModBlocks.SUGARCRETE_BRICK_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SUGARCRETE_BRICK_SLAB);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -65,5 +87,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void evenSimplerBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(Built.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(Built.MOD_ID, "block/"
+                        + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 }

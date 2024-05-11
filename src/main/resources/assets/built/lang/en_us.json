@@ -58,5 +58,52 @@
 
 
 
+  "block.built.chunky_bricks": "Chunky Bricks",
+  "block.built.chunky_brick_stairs": "Chunky Brick Stairs",
+  "block.built.chunky_brick_slab": "Chunky Brick Slab",
+  "block.built.chunky_brick_wall": "Chunky Brick Wall",
+
+
+
+  "block.built.terracotta_trim": "Terracotta Trim",
+  "block.built.white_terracotta_trim": "White Terracotta Trim",
+  "block.built.light_gray_terracotta_trim": "Light Gray Terracotta Trim",
+  "block.built.gray_terracotta_trim": "Gray Terracotta Trim",
+  "block.built.black_terracotta_trim": "Black Terracotta Trim",
+  "block.built.brown_terracotta_trim": "Brown Terracotta Trim",
+  "block.built.red_terracotta_trim": "Red Terracotta Trim",
+  "block.built.orange_terracotta_trim": "Orange Terracotta Trim",
+  "block.built.yellow_terracotta_trim": "Yellow Terracotta Trim",
+  "block.built.lime_terracotta_trim": "Lime Terracotta Trim",
+  "block.built.green_terracotta_trim": "Green Terracotta Trim",
+  "block.built.light_blue_terracotta_trim": "Light Blue Terracotta Trim",
+  "block.built.blue_terracotta_trim": "Blue Terracotta Trim",
+  "block.built.purple_terracotta_trim": "Purple Terracotta Trim",
+  "block.built.pink_terracotta_trim": "Pink Terracotta Trim",
+  "block.built.magenta_terracotta_trim": "Magenta Terracotta Trim",
+
+
+
+  "block.built.cut_cobblestone": "Cut Cobblestone",
+  "block.built.cut_cobblestone_stairs": "Cut Cobblestone Stairs",
+  "block.built.cut_cobblestone_slab": "Cut Cobblestone Slab",
+  "block.built.cut_cobblestone_wall": "Cut Cobblestone Wall",
+
+  "block.built.mossy_cut_cobblestone": "Mossy Cut Cobblestone",
+  "block.built.mossy_cut_cobblestone_stairs": "Mossy Cut Cobblestone Stairs",
+  "block.built.mossy_cut_cobblestone_slab": "Mossy Cut Cobblestone Slab",
+  "block.built.mossy_cut_cobblestone_wall": "Mossy Cut Cobblestone Wall",
+
+  "block.built.carved_stone": "Carved Stone",
+  "block.built.carved_granite": "Carved Granite",
+  "block.built.carved_diorite": "Carved Diorite",
+  "block.built.carved_andesite": "Carved Andesite",
+
+  "block.built.sugarcrete_bricks": "Sugarcrete Bricks",
+  "block.built.sugarcrete_brick_stairs": "Sugarcrete Brick Stairs",
+  "block.built.sugarcrete_brick_slab": "Sugarcrete Brick Slab",
+
+
+
   "creativetab.built_tab": "Built"
 }
