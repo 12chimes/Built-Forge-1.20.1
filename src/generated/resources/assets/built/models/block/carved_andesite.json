@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "built:block/carved_andesite",
+    "side": "built:block/carved_andesite",
+    "top": "built:block/carved_andesite_top"
+  }
+}

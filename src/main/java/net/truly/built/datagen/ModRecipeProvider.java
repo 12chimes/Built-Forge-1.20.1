@@ -1,6 +1,8 @@
 package net.truly.built.datagen;
 
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Blocks;
 import net.truly.built.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -17,9 +19,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
 
-        //OAK
+        //COMPACT PLANKS
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_COMPACT_PLANKS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_COMPACT_PLANKS.get(), 8)
                 .pattern("###")
                 .pattern("#S#")
                 .pattern("###")
@@ -27,358 +29,177 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STRIPPED_OAK_LOG)
                 .unlockedBy(getHasName(Items.STRIPPED_OAK_LOG), has(Items.STRIPPED_OAK_LOG))
                 .save(pWriter);
+
+        //SHAKES
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_SHAKES.get(), 4)
-                .pattern("S#")
                 .pattern("#S")
+                .pattern("S#")
                 .define('#', Items.OAK_PLANKS)
                 .define('S', Items.STRIPPED_OAK_LOG)
                 .unlockedBy(getHasName(Items.STRIPPED_OAK_LOG), has(Items.STRIPPED_OAK_LOG))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.OAK_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.OAK_SHAKES.get()), has(ModBlocks.OAK_SHAKES.get()))
+        //CHUNKY BRICKS
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHUNKY_BRICKS.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', Items.BRICKS)
+                .unlockedBy(getHasName(Items.BRICKS), has(Items.BRICKS))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.OAK_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.OAK_SHAKES.get()), has(ModBlocks.OAK_SHAKES.get()))
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.BRICKS),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHUNKY_BRICKS.get())
+                .unlockedBy(getHasName(Items.BRICKS), has(Items.BRICKS))
+                .save(pWriter, "cut_chunky_bricks");
+
+        //TERRACOTTA TRIM
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_TRIM.get(), 2)
+                .pattern("##")
+                .define('#', Items.TERRACOTTA)
+                .unlockedBy(getHasName(Items.TERRACOTTA), has(Items.TERRACOTTA))
                 .save(pWriter);
 
-        //SPRUCE
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.TERRACOTTA),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.TERRACOTTA_TRIM.get())
+                .unlockedBy(getHasName(Items.TERRACOTTA), has(Items.TERRACOTTA))
+                .save(pWriter,"cut_terracotta_trim");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.SPRUCE_PLANKS)
-                .define('S', Items.STRIPPED_SPRUCE_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_SPRUCE_LOG), has(Items.STRIPPED_SPRUCE_LOG))
+        //CUT COBBLESTONE
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_COBBLESTONE.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', Items.COBBLESTONE)
+                .unlockedBy(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_SHAKES.get(), 4)
-                .pattern("S#")
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.COBBLESTONE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_COBBLESTONE.get())
+                .unlockedBy(getHasName(Items.COBBLESTONE), has(Items.COBBLESTONE))
+                .save(pWriter,"cut_cut_cobblestone");
+
+        //MOSSY CUT COBBLESTONE
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', Items.MOSSY_COBBLESTONE)
+                .unlockedBy(getHasName(Items.MOSSY_COBBLESTONE), has(Items.MOSSY_COBBLESTONE))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.MOSSY_COBBLESTONE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE.get())
+                .unlockedBy(getHasName(Items.MOSSY_COBBLESTONE), has(Items.MOSSY_COBBLESTONE))
+                .save(pWriter,"cut_mossy_cut_cobblestone");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MOSSY_CUT_COBBLESTONE.get())
                 .pattern("#S")
-                .define('#', Items.SPRUCE_PLANKS)
-                .define('S', Items.STRIPPED_SPRUCE_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_SPRUCE_LOG), has(Items.STRIPPED_SPRUCE_LOG))
-                .save(pWriter);
+                .define('#', ModBlocks.CUT_COBBLESTONE.get())
+                .define('S', Items.VINE)
+                .unlockedBy(getHasName(Items.VINE), has(Items.VINE))
+                .save(pWriter, "vine_mossy_cut_cobblestone");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.SPRUCE_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.SPRUCE_SHAKES.get()), has(ModBlocks.SPRUCE_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.SPRUCE_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.SPRUCE_SHAKES.get()), has(ModBlocks.SPRUCE_SHAKES.get()))
-                .save(pWriter);
-
-        //BIRCH
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.BIRCH_PLANKS)
-                .define('S', Items.STRIPPED_BIRCH_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_BIRCH_LOG), has(Items.STRIPPED_BIRCH_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_SHAKES.get(), 4)
-                .pattern("S#")
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MOSSY_CUT_COBBLESTONE.get())
                 .pattern("#S")
-                .define('#', Items.BIRCH_PLANKS)
-                .define('S', Items.STRIPPED_BIRCH_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_BIRCH_LOG), has(Items.STRIPPED_BIRCH_LOG))
-                .save(pWriter);
+                .define('#', ModBlocks.CUT_COBBLESTONE.get())
+                .define('S', Items.MOSS_BLOCK)
+                .unlockedBy(getHasName(Items.MOSS_BLOCK), has(Items.MOSS_BLOCK))
+                .save(pWriter, "moss_mossy_cut_cobblestone");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.BIRCH_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.BIRCH_SHAKES.get()), has(ModBlocks.BIRCH_SHAKES.get()))
-                .save(pWriter);
+        //CARVED STONE
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.BIRCH_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.BIRCH_SHAKES.get()), has(ModBlocks.BIRCH_SHAKES.get()))
-                .save(pWriter);
-
-        //JUNGLE
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.JUNGLE_PLANKS)
-                .define('S', Items.STRIPPED_JUNGLE_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_JUNGLE_LOG), has(Items.STRIPPED_JUNGLE_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_SHAKES.get(), 4)
-                .pattern("S#")
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_STONE.get(), 4)
                 .pattern("#S")
-                .define('#', Items.JUNGLE_PLANKS)
-                .define('S', Items.STRIPPED_JUNGLE_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_JUNGLE_LOG), has(Items.STRIPPED_JUNGLE_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.JUNGLE_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.JUNGLE_SHAKES.get()), has(ModBlocks.JUNGLE_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.JUNGLE_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.JUNGLE_SHAKES.get()), has(ModBlocks.JUNGLE_SHAKES.get()))
-                .save(pWriter);
-
-        //ACACIA
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACACIA_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.ACACIA_PLANKS)
-                .define('S', Items.STRIPPED_ACACIA_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_ACACIA_LOG), has(Items.STRIPPED_ACACIA_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACACIA_SHAKES.get(), 4)
                 .pattern("S#")
+                .define('#', Items.STONE)
+                .define('S', Items.STONE_BRICKS)
+                .unlockedBy(getHasName(Items.STONE_BRICKS), has(Items.STONE_BRICKS))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.STONE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_STONE.get())
+                .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
+                .save(pWriter,"cut_stone_carved_stone");
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.STONE_BRICKS),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_STONE.get())
+                .unlockedBy(getHasName(Items.STONE_BRICKS), has(Items.STONE_BRICKS))
+                .save(pWriter,"cut_stone_bricks_carved_stone");
+
+        //CARVED GRANITE
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_GRANITE.get(), 4)
+                .pattern("SS")
+                .pattern("##")
+                .define('#', Items.GRANITE)
+                .define('S', Items.POLISHED_GRANITE)
+                .unlockedBy(getHasName(Items.POLISHED_GRANITE), has(Items.POLISHED_GRANITE))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.GRANITE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_GRANITE.get())
+                .unlockedBy(getHasName(Items.GRANITE), has(Items.GRANITE))
+                .save(pWriter,"cut_granite_carved_granite");
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_GRANITE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_GRANITE.get())
+                .unlockedBy(getHasName(Items.POLISHED_GRANITE), has(Items.POLISHED_GRANITE))
+                .save(pWriter,"cut_polished_granite_carved_granite");
+
+        //CARVED DIORITE
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_DIORITE.get(), 4)
+                .pattern("SS")
+                .pattern("##")
+                .define('#', Items.DIORITE)
+                .define('S', Items.POLISHED_DIORITE)
+                .unlockedBy(getHasName(Items.POLISHED_DIORITE), has(Items.POLISHED_DIORITE))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.DIORITE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_DIORITE.get())
+                .unlockedBy(getHasName(Items.DIORITE), has(Items.DIORITE))
+                .save(pWriter,"cut_diorite_carved_diorite");
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_DIORITE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_DIORITE.get())
+                .unlockedBy(getHasName(Items.POLISHED_DIORITE), has(Items.POLISHED_DIORITE))
+                .save(pWriter,"cut_polished_diorite_carved_diorite");
+
+        //CARVED ANDESITE
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_ANDESITE.get(), 4)
+                .pattern("SS")
+                .pattern("##")
+                .define('#', Items.ANDESITE)
+                .define('S', Items.POLISHED_ANDESITE)
+                .unlockedBy(getHasName(Items.POLISHED_ANDESITE), has(Items.POLISHED_ANDESITE))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.ANDESITE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_ANDESITE.get())
+                .unlockedBy(getHasName(Items.ANDESITE), has(Items.ANDESITE))
+                .save(pWriter,"cut_andesite_carved_andesite");
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.POLISHED_ANDESITE),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CARVED_ANDESITE.get())
+                .unlockedBy(getHasName(Items.POLISHED_ANDESITE), has(Items.POLISHED_ANDESITE))
+                .save(pWriter,"cut_polished_andesite_carved_andesite");
+
+        //SUGARCRETE BRICKS
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUGARCRETE_BRICKS.get(), 4)
+                .pattern("##")
                 .pattern("#S")
-                .define('#', Items.ACACIA_PLANKS)
-                .define('S', Items.STRIPPED_ACACIA_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_ACACIA_LOG), has(Items.STRIPPED_ACACIA_LOG))
+                .define('#', Items.SUGAR_CANE)
+                .define('S', Items.WHEAT)
+                .unlockedBy(getHasName(Items.SUGAR_CANE), has(Items.SUGAR_CANE))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACACIA_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.ACACIA_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.ACACIA_SHAKES.get()), has(ModBlocks.ACACIA_SHAKES.get()))
-                .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACACIA_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.ACACIA_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.ACACIA_SHAKES.get()), has(ModBlocks.ACACIA_SHAKES.get()))
-                .save(pWriter);
-
-        //DARK OAK
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.DARK_OAK_PLANKS)
-                .define('S', Items.STRIPPED_DARK_OAK_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_DARK_OAK_LOG), has(Items.STRIPPED_DARK_OAK_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_SHAKES.get(), 4)
-                .pattern("S#")
-                .pattern("#S")
-                .define('#', Items.DARK_OAK_PLANKS)
-                .define('S', Items.STRIPPED_DARK_OAK_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_DARK_OAK_LOG), has(Items.STRIPPED_DARK_OAK_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.DARK_OAK_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.DARK_OAK_SHAKES.get()), has(ModBlocks.DARK_OAK_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.DARK_OAK_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.DARK_OAK_SHAKES.get()), has(ModBlocks.DARK_OAK_SHAKES.get()))
-                .save(pWriter);
-
-        //MANGROVE
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.MANGROVE_PLANKS)
-                .define('S', Items.STRIPPED_MANGROVE_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_MANGROVE_LOG), has(Items.STRIPPED_MANGROVE_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_SHAKES.get(), 4)
-                .pattern("S#")
-                .pattern("#S")
-                .define('#', Items.MANGROVE_PLANKS)
-                .define('S', Items.STRIPPED_MANGROVE_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_MANGROVE_LOG), has(Items.STRIPPED_MANGROVE_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.MANGROVE_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.MANGROVE_SHAKES.get()), has(ModBlocks.MANGROVE_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.MANGROVE_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.MANGROVE_SHAKES.get()), has(ModBlocks.MANGROVE_SHAKES.get()))
-                .save(pWriter);
-
-        //CHERRY
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.CHERRY_PLANKS)
-                .define('S', Items.STRIPPED_CHERRY_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_CHERRY_LOG), has(Items.STRIPPED_CHERRY_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_SHAKES.get(), 4)
-                .pattern("S#")
-                .pattern("#S")
-                .define('#', Items.CHERRY_PLANKS)
-                .define('S', Items.STRIPPED_CHERRY_LOG)
-                .unlockedBy(getHasName(Items.STRIPPED_CHERRY_LOG), has(Items.STRIPPED_CHERRY_LOG))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.CHERRY_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.CHERRY_SHAKES.get()), has(ModBlocks.CHERRY_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.CHERRY_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.CHERRY_SHAKES.get()), has(ModBlocks.CHERRY_SHAKES.get()))
-                .save(pWriter);
-
-        //BAMBOO
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.BAMBOO_PLANKS)
-                .define('S', Items.STRIPPED_BAMBOO_BLOCK)
-                .unlockedBy(getHasName(Items.STRIPPED_BAMBOO_BLOCK), has(Items.STRIPPED_BAMBOO_BLOCK))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_SHAKES.get(), 4)
-                .pattern("S#")
-                .pattern("#S")
-                .define('#', Items.BAMBOO_PLANKS)
-                .define('S', Items.STRIPPED_BAMBOO_BLOCK)
-                .unlockedBy(getHasName(Items.STRIPPED_BAMBOO_BLOCK), has(Items.STRIPPED_BAMBOO_BLOCK))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.BAMBOO_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.BAMBOO_SHAKES.get()), has(ModBlocks.BAMBOO_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.BAMBOO_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.BAMBOO_SHAKES.get()), has(ModBlocks.BAMBOO_SHAKES.get()))
-                .save(pWriter);
-
-        //CRIMSON
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.CRIMSON_PLANKS)
-                .define('S', Items.STRIPPED_CRIMSON_STEM)
-                .unlockedBy(getHasName(Items.STRIPPED_CRIMSON_STEM), has(Items.STRIPPED_CRIMSON_STEM))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_SHAKES.get(), 4)
-                .pattern("S#")
-                .pattern("#S")
-                .define('#', Items.CRIMSON_PLANKS)
-                .define('S', Items.STRIPPED_CRIMSON_STEM)
-                .unlockedBy(getHasName(Items.STRIPPED_CRIMSON_STEM), has(Items.STRIPPED_CRIMSON_STEM))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.CRIMSON_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.CRIMSON_SHAKES.get()), has(ModBlocks.CRIMSON_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.CRIMSON_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.CRIMSON_SHAKES.get()), has(ModBlocks.CRIMSON_SHAKES.get()))
-                .save(pWriter);
-
-        //WARPED
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_COMPACT_PLANKS.get())
-                .pattern("###")
-                .pattern("#S#")
-                .pattern("###")
-                .define('#', Items.WARPED_PLANKS)
-                .define('S', Items.STRIPPED_WARPED_STEM)
-                .unlockedBy(getHasName(Items.STRIPPED_WARPED_STEM), has(Items.STRIPPED_WARPED_STEM))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_SHAKES.get(), 4)
-                .pattern("S#")
-                .pattern("#S")
-                .define('#', Items.WARPED_PLANKS)
-                .define('S', Items.STRIPPED_WARPED_STEM)
-                .unlockedBy(getHasName(Items.STRIPPED_WARPED_STEM), has(Items.STRIPPED_WARPED_STEM))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_SHAKES_STAIRS.get(), 4)
-                .pattern("#  ")
-                .pattern("## ")
-                .pattern("###")
-                .define('#', ModBlocks.WARPED_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.WARPED_SHAKES.get()), has(ModBlocks.WARPED_SHAKES.get()))
-                .save(pWriter);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_SHAKES_SLAB.get(), 6)
-                .pattern("###")
-                .define('#', ModBlocks.WARPED_SHAKES.get())
-                .unlockedBy(getHasName(ModBlocks.WARPED_SHAKES.get()), has(ModBlocks.WARPED_SHAKES.get()))
-                .save(pWriter);
 
     }
 }

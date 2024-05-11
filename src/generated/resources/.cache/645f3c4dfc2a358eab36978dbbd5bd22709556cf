@@ -1,2 +1,6 @@
-// 1.20.1	2024-05-10T17:27:06.6128734	Tags for minecraft:block mod id built
-b955b5a798212d17474330bcd9755e633a9670c5 data/minecraft/tags/blocks/mineable/axe.json
+// 1.20.1	2024-05-11T14:29:53.0880847	Tags for minecraft:block mod id built
+533b76d509cfedb378d54b4ba16a6a592ccad31a data/minecraft/tags/blocks/mineable/axe.json
+1cb19ad7e794889a7aaa965eab42dc502c0a6714 data/minecraft/tags/blocks/mineable/pickaxe.json
+02bac9f2db99356c269238dafaebbf3ac116674f data/minecraft/tags/blocks/walls.json
+cd49e8bf010555ee8487d15b8c517881c9cdbec9 data/minecraft/tags/blocks/wooden_slabs.json
+094fab815d62b3bfc766533698c136f7ad3afb97 data/minecraft/tags/blocks/wooden_stairs.json

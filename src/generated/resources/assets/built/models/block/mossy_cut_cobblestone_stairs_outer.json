@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "built:block/mossy_cut_cobblestone",
+    "side": "built:block/mossy_cut_cobblestone",
+    "top": "built:block/mossy_cut_cobblestone"
+  }
+}

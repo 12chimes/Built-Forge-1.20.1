@@ -2,10 +2,7 @@ package net.truly.built.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -131,6 +128,97 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
     public static final RegistryObject<Block> WARPED_SHAKES_SLAB = registerBlock("warped_shakes_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+
+
+
+    public static final RegistryObject<Block> CHUNKY_BRICKS = registerBlock("chunky_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> CHUNKY_BRICK_STAIRS = registerBlock("chunky_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.CHUNKY_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> CHUNKY_BRICK_SLAB = registerBlock("chunky_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+    public static final RegistryObject<Block> CHUNKY_BRICK_WALL = registerBlock("chunky_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+
+
+
+    public static final RegistryObject<Block> TERRACOTTA_TRIM = registerBlock("terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)));
+    public static final RegistryObject<Block> WHITE_TERRACOTTA_TRIM = registerBlock("white_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_TERRACOTTA)));
+    public static final RegistryObject<Block> LIGHT_GRAY_TERRACOTTA_TRIM = registerBlock("light_gray_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_TERRACOTTA)));
+    public static final RegistryObject<Block> GRAY_TERRACOTTA_TRIM = registerBlock("gray_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAY_TERRACOTTA)));
+    public static final RegistryObject<Block> BLACK_TERRACOTTA_TRIM = registerBlock("black_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLACK_TERRACOTTA)));
+    public static final RegistryObject<Block> BROWN_TERRACOTTA_TRIM = registerBlock("brown_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_TERRACOTTA)));
+    public static final RegistryObject<Block> RED_TERRACOTTA_TRIM = registerBlock("red_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_TERRACOTTA)));
+    public static final RegistryObject<Block> ORANGE_TERRACOTTA_TRIM = registerBlock("orange_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ORANGE_TERRACOTTA)));
+    public static final RegistryObject<Block> YELLOW_TERRACOTTA_TRIM = registerBlock("yellow_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.YELLOW_TERRACOTTA)));
+    public static final RegistryObject<Block> LIME_TERRACOTTA_TRIM = registerBlock("lime_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIME_TERRACOTTA)));
+    public static final RegistryObject<Block> GREEN_TERRACOTTA_TRIM = registerBlock("green_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GREEN_TERRACOTTA)));
+    public static final RegistryObject<Block> LIGHT_BLUE_TERRACOTTA_TRIM = registerBlock("light_blue_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_TERRACOTTA)));
+    public static final RegistryObject<Block> CYAN_TERRACOTTA_TRIM = registerBlock("cyan_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CYAN_TERRACOTTA)));
+    public static final RegistryObject<Block> BLUE_TERRACOTTA_TRIM = registerBlock("blue_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLUE_TERRACOTTA)));
+    public static final RegistryObject<Block> PURPLE_TERRACOTTA_TRIM = registerBlock("purple_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PURPLE_TERRACOTTA)));
+    public static final RegistryObject<Block> PINK_TERRACOTTA_TRIM = registerBlock("pink_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PINK_TERRACOTTA)));
+    public static final RegistryObject<Block> MAGENTA_TERRACOTTA_TRIM = registerBlock("magenta_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MAGENTA_TERRACOTTA)));
+
+
+
+    public static final RegistryObject<Block> CUT_COBBLESTONE = registerBlock("cut_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<Block> CUT_COBBLESTONE_STAIRS = registerBlock("cut_cobblestone_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_COBBLESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<Block> CUT_COBBLESTONE_SLAB = registerBlock("cut_cobblestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<Block> CUT_COBBLESTONE_WALL = registerBlock("cut_cobblestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+
+    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE = registerBlock("mossy_cut_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE_STAIRS = registerBlock("mossy_cut_cobblestone_stairs",
+            () -> new StairBlock(() -> ModBlocks.MOSSY_CUT_COBBLESTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE_SLAB = registerBlock("mossy_cut_cobblestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE_WALL = registerBlock("mossy_cut_cobblestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+
+    public static final RegistryObject<Block> CARVED_STONE = registerBlock("carved_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> CARVED_GRANITE = registerBlock("carved_granite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE)));
+    public static final RegistryObject<Block> CARVED_DIORITE = registerBlock("carved_diorite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE)));
+    public static final RegistryObject<Block> CARVED_ANDESITE = registerBlock("carved_andesite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE)));
+
+
+
+    public static final RegistryObject<Block> SUGARCRETE_BRICKS = registerBlock("sugarcrete_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.NETHER_WART)));
+    public static final RegistryObject<Block> SUGARCRETE_BRICK_STAIRS = registerBlock("sugarcrete_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.SUGARCRETE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.NETHER_WART)));
+    public static final RegistryObject<Block> SUGARCRETE_BRICK_SLAB = registerBlock("sugarcrete_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.NETHER_WART)));
+
 
 
 

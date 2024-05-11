@@ -82,6 +82,65 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.WARPED_SHAKES_SLAB.get()));
 
 
+
+        this.dropSelf(ModBlocks.CHUNKY_BRICKS.get());
+        this.dropSelf(ModBlocks.CHUNKY_BRICK_STAIRS.get());
+        this.add(ModBlocks.CHUNKY_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHUNKY_BRICK_SLAB.get()));
+        this.dropSelf(ModBlocks.CHUNKY_BRICK_WALL.get());
+
+
+
+        this.dropSelf(ModBlocks.TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.WHITE_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.GRAY_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.BLACK_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.BROWN_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.RED_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.ORANGE_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.YELLOW_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.LIME_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.GREEN_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.CYAN_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.BLUE_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.PURPLE_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.PINK_TERRACOTTA_TRIM.get());
+        this.dropSelf(ModBlocks.MAGENTA_TERRACOTTA_TRIM.get());
+
+
+
+        this.dropSelf(ModBlocks.CUT_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.CUT_COBBLESTONE_STAIRS.get());
+        this.add(ModBlocks.CUT_COBBLESTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUT_COBBLESTONE_SLAB.get()));
+        this.dropSelf(ModBlocks.CUT_COBBLESTONE_WALL.get());
+
+        this.dropSelf(ModBlocks.MOSSY_CUT_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS.get());
+        this.add(ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get()));
+        this.dropSelf(ModBlocks.MOSSY_CUT_COBBLESTONE_WALL.get());
+
+        this.dropSelf(ModBlocks.CARVED_STONE.get());
+        this.dropSelf(ModBlocks.CARVED_GRANITE.get());
+        this.dropSelf(ModBlocks.CARVED_DIORITE.get());
+        this.dropSelf(ModBlocks.CARVED_ANDESITE.get());
+
+        this.dropSelf(ModBlocks.SUGARCRETE_BRICKS.get());
+        this.dropSelf(ModBlocks.SUGARCRETE_BRICK_STAIRS.get());
+        this.add(ModBlocks.SUGARCRETE_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SUGARCRETE_BRICK_SLAB.get()));
+
+
+
+
+
+
+
+
+
     }
 
     @Override

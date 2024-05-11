@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:andesite"
+    },
+    "S": {
+      "item": "minecraft:polished_andesite"
+    }
+  },
+  "pattern": [
+    "SS",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "item": "built:carved_andesite"
+  },
+  "show_notification": true
+}

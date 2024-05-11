@@ -1,11 +1,9 @@
 package net.truly.built.datagen;
 
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.truly.built.Built;
 import net.truly.built.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -83,6 +81,62 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.WARPED_SHAKES_SLAB.get()), blockTexture(ModBlocks.WARPED_SHAKES.get()),
                 blockTexture(ModBlocks.WARPED_SHAKES.get()));
 
+
+
+
+        blockWithItem(ModBlocks.CHUNKY_BRICKS);
+        stairsBlock(((StairBlock) ModBlocks.CHUNKY_BRICK_STAIRS.get()), blockTexture(ModBlocks.CHUNKY_BRICKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.CHUNKY_BRICK_SLAB.get()), blockTexture(ModBlocks.CHUNKY_BRICKS.get()),
+                blockTexture(ModBlocks.CHUNKY_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.CHUNKY_BRICK_WALL.get()), blockTexture(ModBlocks.CHUNKY_BRICKS.get()));
+
+
+
+        blockWithItem(ModBlocks.TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.WHITE_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.LIGHT_GRAY_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.GRAY_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.BLACK_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.BROWN_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.RED_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.ORANGE_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.YELLOW_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.LIME_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.GREEN_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.LIGHT_BLUE_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.CYAN_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.BLUE_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.PURPLE_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.PINK_TERRACOTTA_TRIM);
+        blockWithItem(ModBlocks.MAGENTA_TERRACOTTA_TRIM);
+
+
+
+        blockWithItem(ModBlocks.CUT_COBBLESTONE);
+        stairsBlock(((StairBlock) ModBlocks.CUT_COBBLESTONE_STAIRS.get()), blockTexture(ModBlocks.CUT_COBBLESTONE.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_COBBLESTONE_SLAB.get()), blockTexture(ModBlocks.CUT_COBBLESTONE.get()),
+                blockTexture(ModBlocks.CUT_COBBLESTONE.get()));
+        wallBlock(((WallBlock) ModBlocks.CUT_COBBLESTONE_WALL.get()), blockTexture(ModBlocks.CUT_COBBLESTONE.get()));
+
+        blockWithItem(ModBlocks.MOSSY_CUT_COBBLESTONE);
+        stairsBlock(((StairBlock) ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS.get()), blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()));
+        slabBlock(((SlabBlock) ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get()), blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()),
+                blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()));
+        wallBlock(((WallBlock) ModBlocks.MOSSY_CUT_COBBLESTONE_WALL.get()), blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()));
+
+        simpleBlock(ModBlocks.CARVED_STONE.get(), models().orientable("carved_stone",
+                modLoc("block/carved_stone"), modLoc("block/carved_stone"), modLoc("block/carved_stone_top")));
+        simpleBlock(ModBlocks.CARVED_GRANITE.get(), models().orientable("carved_granite",
+                modLoc("block/carved_granite"), modLoc("block/carved_granite"), modLoc("block/carved_granite_top")));
+        simpleBlock(ModBlocks.CARVED_DIORITE.get(), models().orientable("carved_diorite",
+                modLoc("block/carved_diorite"), modLoc("block/carved_diorite"), modLoc("block/carved_diorite_top")));
+        simpleBlock(ModBlocks.CARVED_ANDESITE.get(), models().orientable("carved_andesite",
+                modLoc("block/carved_andesite"), modLoc("block/carved_andesite"), modLoc("block/carved_andesite_top")));
+
+        blockWithItem(ModBlocks.SUGARCRETE_BRICKS);
+        stairsBlock(((StairBlock) ModBlocks.SUGARCRETE_BRICK_STAIRS.get()), blockTexture(ModBlocks.SUGARCRETE_BRICKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.SUGARCRETE_BRICK_SLAB.get()), blockTexture(ModBlocks.SUGARCRETE_BRICKS.get()),
+                blockTexture(ModBlocks.SUGARCRETE_BRICKS.get()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
