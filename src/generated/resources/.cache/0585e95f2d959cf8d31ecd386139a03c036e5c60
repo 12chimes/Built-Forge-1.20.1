@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-11T14:29:53.0801052	Block States: built
+// 1.20.1	2024-05-11T15:33:14.064201	Block States: built
 73c7afa73a5510f39de656111797d6f3052bf77e assets/built/blockstates/acacia_compact_planks.json
 9b0f58cc91a528656bf24cd60f7b46eb007d1891 assets/built/blockstates/acacia_shakes.json
 151f9ce960c704bf11b8f81f04ebc6f12ba9e951 assets/built/blockstates/acacia_shakes_slab.json
@@ -39,6 +39,7 @@ bd3b0d6ff496b6880e3bfc77887fecda4e9eacd2 assets/built/blockstates/cyan_terracott
 963f282de1bb0e6dcb7f19416c6a87cc31a6dd4c assets/built/blockstates/dark_oak_shakes.json
 5184997249684850b067b7160465d0fbc7cb061e assets/built/blockstates/dark_oak_shakes_slab.json
 404a17f70fee8585a9d2f67a02160214942fc669 assets/built/blockstates/dark_oak_shakes_stairs.json
+e69e052e13888473595227a9a099022379dc437d assets/built/blockstates/fresh_bamboo_block.json
 9242b3e0a1c502602c27659e21640734151f2ca4 assets/built/blockstates/gray_terracotta_trim.json
 563be383345fe55c53ac0fab61fa6558d9934e87 assets/built/blockstates/green_terracotta_trim.json
 c6550a4c471338b80d49fab7474ff1cc7e5de7e5 assets/built/blockstates/jungle_compact_planks.json
@@ -147,6 +148,8 @@ dc26e5cfaf6eab24d4d67d8292b0d128ccc5d570 assets/built/models/block/cyan_terracot
 c3cedd95277dc30f15b0c0bcd58d7cd3eafe7353 assets/built/models/block/dark_oak_shakes_stairs.json
 e40edf6e5eaa997786b8cab75b9f4546405a9cd7 assets/built/models/block/dark_oak_shakes_stairs_inner.json
 bfef19f4f844a6fdd3819f5f6983f99047b6df58 assets/built/models/block/dark_oak_shakes_stairs_outer.json
+61a1ee0f9b7686f42fc820a8e58766e1af03103f assets/built/models/block/fresh_bamboo_block.json
+0cce2e54fc8361af97b4742934159d3cdcb74179 assets/built/models/block/fresh_bamboo_block_horizontal.json
 41a7139c1452846485176fd0c5a83f2a57c102e4 assets/built/models/block/gray_terracotta_trim.json
 65bc519f66d97b5005c8e6da4105ee83f9b897d3 assets/built/models/block/green_terracotta_trim.json
 5b7aa3c3e69c13122506de4677191c8a3f5e439b assets/built/models/block/jungle_compact_planks.json

@@ -199,6 +199,57 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.SUGAR_CANE), has(Items.SUGAR_CANE))
                 .save(pWriter);
 
+        //FRESH BAMBOO
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FRESH_BAMBOO_BLOCK.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', Items.BAMBOO)
+                .unlockedBy(getHasName(Items.BAMBOO), has(Items.BAMBOO))
+                .save(pWriter);
+
+        //CUT FRESH BAMBOO
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_FRESH_BAMBOO.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.FRESH_BAMBOO_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.FRESH_BAMBOO_BLOCK.get()), has(ModBlocks.FRESH_BAMBOO_BLOCK.get()))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.FRESH_BAMBOO_BLOCK.get()),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_FRESH_BAMBOO.get())
+                .unlockedBy(getHasName(ModBlocks.FRESH_BAMBOO_BLOCK.get()), has(ModBlocks.FRESH_BAMBOO_BLOCK.get()))
+                .save(pWriter,"cut_cut_fresh_bamboo_block");
+
+        //CUT BAMBOO
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_BAMBOO.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', Items.BAMBOO_BLOCK)
+                .unlockedBy(getHasName(Items.BAMBOO_BLOCK), has(Items.BAMBOO_BLOCK))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.BAMBOO_BLOCK),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_BAMBOO.get())
+                .unlockedBy(getHasName(Items.BAMBOO_BLOCK), has(Items.BAMBOO_BLOCK))
+                .save(pWriter,"cut_cut_bamboo_block");
+
+        //CUT STRIPPED BAMBOO
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_STRIPPED_BAMBOO.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', Items.STRIPPED_BAMBOO_BLOCK)
+                .unlockedBy(getHasName(Items.STRIPPED_BAMBOO_BLOCK), has(Items.STRIPPED_BAMBOO_BLOCK))
+                .save(pWriter);
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.STRIPPED_BAMBOO_BLOCK),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_STRIPPED_BAMBOO.get())
+                .unlockedBy(getHasName(Items.STRIPPED_BAMBOO_BLOCK), has(Items.STRIPPED_BAMBOO_BLOCK))
+                .save(pWriter,"cut_cut_stripped_bamboo_block");
+
 
 
     }

@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-11T14:29:53.0870872	Item Models: built
+// 1.20.1	2024-05-11T15:33:14.0691873	Item Models: built
 c8d6744754c528a506319e305f5b186fc5cd354a assets/built/models/item/acacia_shakes_slab.json
 3ce299ca4d529a0e1d70f965a2546e5bd5c97bc0 assets/built/models/item/acacia_shakes_stairs.json
 2721d48ede034b6a6acd52cbe6e57fe664e44ae2 assets/built/models/item/bamboo_shakes_slab.json
@@ -22,6 +22,7 @@ c2c7998d185efe8aebb2b6339e8636b5ca85136c assets/built/models/item/crimson_shakes
 90a1d79a720846201624a2f2a4c6482545a59350 assets/built/models/item/cut_cobblestone_wall.json
 a6a96478bf5d064cb37b1da4d7351798ac169e7a assets/built/models/item/dark_oak_shakes_slab.json
 63cba75329f87cc37678455f9e4d91d9cd28b00a assets/built/models/item/dark_oak_shakes_stairs.json
+edfda46b41572ef0679e5923d338f5b8f25ec823 assets/built/models/item/fresh_bamboo_block.json
 d69b3e88428a8a554431de56fb65f44822cf397a assets/built/models/item/jungle_shakes_slab.json
 5b951fb21814c77f83c650bf38ba595c76fea000 assets/built/models/item/jungle_shakes_stairs.json
 9019bf624f01e0f324141368e112215420002112 assets/built/models/item/mangrove_shakes_slab.json

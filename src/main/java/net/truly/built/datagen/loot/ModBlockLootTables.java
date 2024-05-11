@@ -133,6 +133,23 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SUGARCRETE_BRICK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SUGARCRETE_BRICK_SLAB.get()));
 
+        this.dropSelf(ModBlocks.FRESH_BAMBOO_BLOCK.get());
+
+        this.dropSelf(ModBlocks.CUT_FRESH_BAMBOO.get());
+        this.dropSelf(ModBlocks.CUT_FRESH_BAMBOO_STAIRS.get());
+        this.add(ModBlocks.CUT_FRESH_BAMBOO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUT_FRESH_BAMBOO_SLAB.get()));
+
+        this.dropSelf(ModBlocks.CUT_BAMBOO.get());
+        this.dropSelf(ModBlocks.CUT_BAMBOO_STAIRS.get());
+        this.add(ModBlocks.CUT_BAMBOO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUT_BAMBOO_SLAB.get()));
+
+        this.dropSelf(ModBlocks.CUT_STRIPPED_BAMBOO.get());
+        this.dropSelf(ModBlocks.CUT_STRIPPED_BAMBOO_STAIRS.get());
+        this.add(ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get()));
+
 
 
 
