@@ -2,6 +2,8 @@ package net.truly.built.datagen;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.truly.built.Built;
 import net.truly.built.block.ModBlocks;
 import net.minecraft.data.PackOutput;
@@ -135,23 +137,81 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock(((RotatedPillarBlock) ModBlocks.FRESH_BAMBOO_BLOCK.get()), blockTexture(ModBlocks.FRESH_BAMBOO_BLOCK.get()),
                 new ResourceLocation(Built.MOD_ID, "block/fresh_bamboo_block_top"));
 
-        blockWithItem(ModBlocks.CUT_FRESH_BAMBOO);
-        stairsBlock(((StairBlock) ModBlocks.CUT_FRESH_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_FRESH_BAMBOO.get()));
-        slabBlock(((SlabBlock) ModBlocks.CUT_FRESH_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_FRESH_BAMBOO.get()),
-                blockTexture(ModBlocks.CUT_FRESH_BAMBOO.get()));
+        blockWithItem(ModBlocks.CUT_FRESH_BAMBOO_BLOCK);
+        stairsBlock(((StairBlock) ModBlocks.CUT_FRESH_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_FRESH_BAMBOO_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_FRESH_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_FRESH_BAMBOO_BLOCK.get()),
+                blockTexture(ModBlocks.CUT_FRESH_BAMBOO_BLOCK.get()));
 
-        blockWithItem(ModBlocks.CUT_BAMBOO);
-        stairsBlock(((StairBlock) ModBlocks.CUT_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_BAMBOO.get()));
-        slabBlock(((SlabBlock) ModBlocks.CUT_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_BAMBOO.get()),
-                blockTexture(ModBlocks.CUT_BAMBOO.get()));
+        blockWithItem(ModBlocks.CUT_BAMBOO_BLOCK);
+        stairsBlock(((StairBlock) ModBlocks.CUT_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_BAMBOO_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_BAMBOO_BLOCK.get()),
+                blockTexture(ModBlocks.CUT_BAMBOO_BLOCK.get()));
 
-        blockWithItem(ModBlocks.CUT_STRIPPED_BAMBOO);
-        stairsBlock(((StairBlock) ModBlocks.CUT_STRIPPED_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO.get()));
-        slabBlock(((SlabBlock) ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO.get()),
-                blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO.get()));
+        blockWithItem(ModBlocks.CUT_STRIPPED_BAMBOO_BLOCK);
+        stairsBlock(((StairBlock) ModBlocks.CUT_STRIPPED_BAMBOO_STAIRS.get()), blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get()), blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO_BLOCK.get()),
+                blockTexture(ModBlocks.CUT_STRIPPED_BAMBOO_BLOCK.get()));
+
+        simpleBlockWithItem(ModBlocks.MUD_POT.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/mud_pot")));
+
+        blockWithItem(ModBlocks.POLISHED_PACKED_MUD);
+
+        blockWithItem(ModBlocks.MUD_SHINGLES);
+        stairsBlock(((StairBlock) ModBlocks.MUD_SHINGLES_STAIRS.get()), blockTexture(ModBlocks.MUD_SHINGLES.get()));
+        slabBlock(((SlabBlock) ModBlocks.MUD_SHINGLES_SLAB.get()), blockTexture(ModBlocks.MUD_SHINGLES.get()),
+                blockTexture(ModBlocks.MUD_SHINGLES.get()));
+        wallBlock(((WallBlock) ModBlocks.MUD_SHINGLES_WALL.get()), blockTexture(ModBlocks.MUD_SHINGLES.get()));
+
+        blockWithItem(ModBlocks.STONE_SHINGLES);
+        stairsBlock(((StairBlock) ModBlocks.STONE_SHINGLES_STAIRS.get()), blockTexture(ModBlocks.STONE_SHINGLES.get()));
+        slabBlock(((SlabBlock) ModBlocks.STONE_SHINGLES_SLAB.get()), blockTexture(ModBlocks.STONE_SHINGLES.get()),
+                blockTexture(ModBlocks.STONE_SHINGLES.get()));
+        wallBlock(((WallBlock) ModBlocks.STONE_SHINGLES_WALL.get()), blockTexture(ModBlocks.STONE_SHINGLES.get()));
+
+        blockWithItem(ModBlocks.MOSSY_STONE_SHINGLES);
+        stairsBlock(((StairBlock) ModBlocks.MOSSY_STONE_SHINGLES_STAIRS.get()), blockTexture(ModBlocks.MOSSY_STONE_SHINGLES.get()));
+        slabBlock(((SlabBlock) ModBlocks.MOSSY_STONE_SHINGLES_SLAB.get()), blockTexture(ModBlocks.MOSSY_STONE_SHINGLES.get()),
+                blockTexture(ModBlocks.MOSSY_STONE_SHINGLES.get()));
+        wallBlock(((WallBlock) ModBlocks.MOSSY_STONE_SHINGLES_WALL.get()), blockTexture(ModBlocks.MOSSY_STONE_SHINGLES.get()));
+
+        blockWithItem(ModBlocks.SANDSTONE_SHINGLES);
+        stairsBlock(((StairBlock) ModBlocks.SANDSTONE_SHINGLES_STAIRS.get()), blockTexture(ModBlocks.SANDSTONE_SHINGLES.get()));
+        slabBlock(((SlabBlock) ModBlocks.SANDSTONE_SHINGLES_SLAB.get()), blockTexture(ModBlocks.SANDSTONE_SHINGLES.get()),
+                blockTexture(ModBlocks.SANDSTONE_SHINGLES.get()));
+        wallBlock(((WallBlock) ModBlocks.SANDSTONE_SHINGLES_WALL.get()), blockTexture(ModBlocks.SANDSTONE_SHINGLES.get()));
+
+        blockWithItem(ModBlocks.DEEPSLATE_SHINGLES);
+        stairsBlock(((StairBlock) ModBlocks.DEEPSLATE_SHINGLES_STAIRS.get()), blockTexture(ModBlocks.DEEPSLATE_SHINGLES.get()));
+        slabBlock(((SlabBlock) ModBlocks.DEEPSLATE_SHINGLES_SLAB.get()), blockTexture(ModBlocks.DEEPSLATE_SHINGLES.get()),
+                blockTexture(ModBlocks.DEEPSLATE_SHINGLES.get()));
+        wallBlock(((WallBlock) ModBlocks.DEEPSLATE_SHINGLES_WALL.get()), blockTexture(ModBlocks.DEEPSLATE_SHINGLES.get()));
+
+        leavesBlock(ModBlocks.IRON_GRATE);
+
+        glassBlock(ModBlocks.FRAMED_GLASS);
+
+
+
+
+
+
+
     }
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void glassBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/glass"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("translucent"));
+    }
+
+        private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }

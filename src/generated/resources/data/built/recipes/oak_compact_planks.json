@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "compact_planks",
   "key": {
     "#": {
       "item": "minecraft:oak_planks"

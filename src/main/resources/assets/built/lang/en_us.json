@@ -89,10 +89,10 @@
   "block.built.cut_cobblestone_slab": "Cut Cobblestone Slab",
   "block.built.cut_cobblestone_wall": "Cut Cobblestone Wall",
 
-  "block.built.mossy_cut_cobblestone": "Mossy Cut Cobblestone",
-  "block.built.mossy_cut_cobblestone_stairs": "Mossy Cut Cobblestone Stairs",
-  "block.built.mossy_cut_cobblestone_slab": "Mossy Cut Cobblestone Slab",
-  "block.built.mossy_cut_cobblestone_wall": "Mossy Cut Cobblestone Wall",
+  "block.built.mossy_cut_cobblestone": "Cut Mossy Cobblestone",
+  "block.built.mossy_cut_cobblestone_stairs": "Cut Mossy Cobblestone Stairs",
+  "block.built.mossy_cut_cobblestone_slab": "Cut Mossy Cobblestone Slab",
+  "block.built.mossy_cut_cobblestone_wall": "Cut Mossy Cobblestone Wall",
 
   "block.built.carved_stone": "Carved Stone",
   "block.built.carved_granite": "Carved Granite",
@@ -105,19 +105,51 @@
 
   "block.built.fresh_bamboo_block": "Fresh Bamboo Block",
 
-  "block.built.cut_fresh_bamboo": "Cut Fresh Bamboo Block",
+  "block.built.cut_fresh_bamboo_block": "Cut Fresh Bamboo Block",
   "block.built.cut_fresh_bamboo_stairs": "Cut Fresh Bamboo Stairs",
   "block.built.cut_fresh_bamboo_slab": "Cut Fresh Bamboo Slab",
 
-  "block.built.cut_bamboo": "Cut Bamboo Block",
+  "block.built.cut_bamboo_block": "Cut Bamboo Block",
   "block.built.cut_bamboo_stairs": "Cut Bamboo Stairs",
   "block.built.cut_bamboo_slab": "Cut Bamboo Slab",
 
-  "block.built.cut_stripped_bamboo": "Cut Stripped Bamboo Block",
+  "block.built.cut_stripped_bamboo_block": "Cut Stripped Bamboo Block",
   "block.built.cut_stripped_bamboo_stairs": "Cut Stripped Bamboo Stairs",
   "block.built.cut_stripped_bamboo_slab": "Cut Stripped Bamboo Slab",
 
+  "block.built.mud_pot": "Mud Pot",
 
+  "block.built.polished_packed_mud": "Polished Packed Mud",
+
+  "block.built.mud_shingles": "Mud Shingles",
+  "block.built.mud_shingles_stairs": "Mud Shingles Stairs",
+  "block.built.mud_shingles_slab": "Mud Shingles Slab",
+  "block.built.mud_shingles_wall": "Mud Shingles Wall",
+
+  "block.built.stone_shingles": "Stone Shingles",
+  "block.built.stone_shingles_stairs": "Stone Shingles Stairs",
+  "block.built.stone_shingles_slab": "Stone Shingles Slab",
+  "block.built.stone_shingles_wall": "Stone Shingles Wall",
+
+  "block.built.mossy_stone_shingles": "Mossy Stone Shingles",
+  "block.built.mossy_stone_shingles_stairs": "Mossy Stone Shingles Stairs",
+  "block.built.mossy_stone_shingles_slab": "Mossy Stone Shingles Slab",
+  "block.built.mossy_stone_shingles_wall": "Mossy Stone Shingles Wall",
+
+  "block.built.sandstone_shingles": "Sandstone Shingles",
+  "block.built.sandstone_shingles_stairs": "Sandstone Shingles Stairs",
+  "block.built.sandstone_shingles_slab": "Sandstone Shingles Slab",
+  "block.built.sandstone_shingles_wall": "Sandstone Shingles Wall",
+
+  "block.built.deepslate_shingles": "Deepslate Shingles",
+  "block.built.deepslate_shingles_stairs": "Deepslate Shingles Stairs",
+  "block.built.deepslate_shingles_slab": "Deepslate Shingles Slab",
+  "block.built.deepslate_shingles_wall": "Deepslate Shingles Wall",
+
+  "block.built.iron_grate": "Grate",
+
+  "block.built.framed_glass": "Wooden Framed Glass",
+  "block.built.framed_glass_pane": "Wooden Framed Glass Pane",
 
   "creativetab.built_tab": "Built"
 }

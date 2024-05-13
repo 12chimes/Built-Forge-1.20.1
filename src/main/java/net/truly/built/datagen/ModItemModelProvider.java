@@ -87,6 +87,28 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         evenSimplerBlockItem(ModBlocks.CUT_STRIPPED_BAMBOO_STAIRS);
         evenSimplerBlockItem(ModBlocks.CUT_STRIPPED_BAMBOO_SLAB);
+
+        evenSimplerBlockItem(ModBlocks.MUD_SHINGLES_STAIRS);
+        evenSimplerBlockItem(ModBlocks.MUD_SHINGLES_SLAB);
+        wallItem(ModBlocks.MUD_SHINGLES_WALL, ModBlocks.MUD_SHINGLES);
+
+        evenSimplerBlockItem(ModBlocks.STONE_SHINGLES_STAIRS);
+        evenSimplerBlockItem(ModBlocks.STONE_SHINGLES_SLAB);
+        wallItem(ModBlocks.STONE_SHINGLES_WALL, ModBlocks.STONE_SHINGLES);
+
+        evenSimplerBlockItem(ModBlocks.MOSSY_STONE_SHINGLES_STAIRS);
+        evenSimplerBlockItem(ModBlocks.MOSSY_STONE_SHINGLES_SLAB);
+        wallItem(ModBlocks.MOSSY_STONE_SHINGLES_WALL, ModBlocks.MOSSY_STONE_SHINGLES);
+
+        evenSimplerBlockItem(ModBlocks.SANDSTONE_SHINGLES_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SANDSTONE_SHINGLES_SLAB);
+        wallItem(ModBlocks.SANDSTONE_SHINGLES_WALL, ModBlocks.SANDSTONE_SHINGLES);
+
+        evenSimplerBlockItem(ModBlocks.DEEPSLATE_SHINGLES_STAIRS);
+        evenSimplerBlockItem(ModBlocks.DEEPSLATE_SHINGLES_SLAB);
+        wallItem(ModBlocks.DEEPSLATE_SHINGLES_WALL, ModBlocks.DEEPSLATE_SHINGLES);
+
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
