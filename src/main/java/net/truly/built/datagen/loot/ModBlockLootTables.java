@@ -1,5 +1,10 @@
 package net.truly.built.datagen.loot;
 
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.truly.built.block.ModBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -135,28 +140,62 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.FRESH_BAMBOO_BLOCK.get());
 
-        this.dropSelf(ModBlocks.CUT_FRESH_BAMBOO.get());
+        this.dropSelf(ModBlocks.CUT_FRESH_BAMBOO_BLOCK.get());
         this.dropSelf(ModBlocks.CUT_FRESH_BAMBOO_STAIRS.get());
         this.add(ModBlocks.CUT_FRESH_BAMBOO_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.CUT_FRESH_BAMBOO_SLAB.get()));
 
-        this.dropSelf(ModBlocks.CUT_BAMBOO.get());
+        this.dropSelf(ModBlocks.CUT_BAMBOO_BLOCK.get());
         this.dropSelf(ModBlocks.CUT_BAMBOO_STAIRS.get());
         this.add(ModBlocks.CUT_BAMBOO_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.CUT_BAMBOO_SLAB.get()));
 
-        this.dropSelf(ModBlocks.CUT_STRIPPED_BAMBOO.get());
+        this.dropSelf(ModBlocks.CUT_STRIPPED_BAMBOO_BLOCK.get());
         this.dropSelf(ModBlocks.CUT_STRIPPED_BAMBOO_STAIRS.get());
         this.add(ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.CUT_STRIPPED_BAMBOO_SLAB.get()));
 
+        this.dropSelf(ModBlocks.MUD_POT.get());
 
+        this.dropSelf(ModBlocks.POLISHED_PACKED_MUD.get());
 
+        this.dropSelf(ModBlocks.MUD_SHINGLES.get());
+        this.dropSelf(ModBlocks.MUD_SHINGLES_STAIRS.get());
+        this.add(ModBlocks.MUD_SHINGLES_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MUD_SHINGLES_SLAB.get()));
+        this.dropSelf(ModBlocks.MUD_SHINGLES_WALL.get());
 
+        this.dropSelf(ModBlocks.STONE_SHINGLES.get());
+        this.dropSelf(ModBlocks.STONE_SHINGLES_STAIRS.get());
+        this.add(ModBlocks.STONE_SHINGLES_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STONE_SHINGLES_SLAB.get()));
+        this.dropSelf(ModBlocks.STONE_SHINGLES_WALL.get());
 
+        this.dropSelf(ModBlocks.MOSSY_STONE_SHINGLES.get());
+        this.dropSelf(ModBlocks.MOSSY_STONE_SHINGLES_STAIRS.get());
+        this.add(ModBlocks.MOSSY_STONE_SHINGLES_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MOSSY_STONE_SHINGLES_SLAB.get()));
+        this.dropSelf(ModBlocks.MOSSY_STONE_SHINGLES_WALL.get());
 
+        this.dropSelf(ModBlocks.SANDSTONE_SHINGLES.get());
+        this.dropSelf(ModBlocks.SANDSTONE_SHINGLES_STAIRS.get());
+        this.add(ModBlocks.SANDSTONE_SHINGLES_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SANDSTONE_SHINGLES_SLAB.get()));
+        this.dropSelf(ModBlocks.SANDSTONE_SHINGLES_WALL.get());
 
+        this.dropSelf(ModBlocks.DEEPSLATE_SHINGLES.get());
+        this.dropSelf(ModBlocks.DEEPSLATE_SHINGLES_STAIRS.get());
+        this.add(ModBlocks.DEEPSLATE_SHINGLES_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.DEEPSLATE_SHINGLES_SLAB.get()));
+        this.dropSelf(ModBlocks.DEEPSLATE_SHINGLES_WALL.get());
 
+        this.dropSelf(ModBlocks.IRON_GRATE.get());
+
+        this.add(ModBlocks.FRAMED_GLASS.get(),
+                block -> createSilkTouchOnlyTable(ModBlocks.FRAMED_GLASS.get()));
+
+        this.add(ModBlocks.FRAMED_GLASS_PANE.get(),
+                block -> createSilkTouchOnlyTable(ModBlocks.FRAMED_GLASS_PANE.get()));
 
     }
 

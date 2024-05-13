@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class ModFlammableWoodBlock extends Block {
+
     public ModFlammableWoodBlock(Properties pProperties) {
         super(pProperties);
     }

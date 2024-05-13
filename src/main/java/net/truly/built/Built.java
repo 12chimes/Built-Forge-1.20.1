@@ -12,6 +12,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.truly.built.block.ModBlocks;
+import net.truly.built.block.entity.ModBlockEntities;
 import net.truly.built.item.ModCreativeTabs;
 import net.truly.built.item.ModItems;
 import org.slf4j.Logger;
@@ -29,6 +30,8 @@ public class Built {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
