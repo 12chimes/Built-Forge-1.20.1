@@ -7,7 +7,6 @@ import net.truly.built.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.truly.built.item.ModItems;
 
 import java.util.function.Consumer;
 
@@ -1020,6 +1019,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S")
                 .define('#', ModBlocks.STONE_SHINGLES.get())
                 .define('S', Items.VINE)
+                .group("mossy_stone_shingles")
                 .unlockedBy(getHasName(Items.MOSSY_STONE_BRICK_SLAB), has(Items.MOSSY_STONE_BRICK_SLAB))
                 .save(pWriter, "vine_mossy_stone_shingles");
 
@@ -1027,6 +1027,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#S")
                 .define('#', ModBlocks.STONE_SHINGLES.get())
                 .define('S', Items.MOSS_BLOCK)
+                .group("mossy_stone_shingles")
                 .unlockedBy(getHasName(Items.MOSSY_STONE_BRICK_SLAB), has(Items.MOSSY_STONE_BRICK_SLAB))
                 .save(pWriter, "moss_mossy_stone_shingles");
 
