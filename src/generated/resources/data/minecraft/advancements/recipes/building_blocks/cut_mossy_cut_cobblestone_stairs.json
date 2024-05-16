@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mossy_cut_cobblestone": {
+    "has_cut_mossy_cobblestone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "built:mossy_cut_cobblestone"
+              "built:cut_mossy_cobblestone"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_mossy_cut_cobblestone",
+      "has_cut_mossy_cobblestone",
       "has_the_recipe"
     ]
   ],

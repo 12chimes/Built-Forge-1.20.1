@@ -190,14 +190,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> CUT_COBBLESTONE_WALL = registerBlock("cut_cobblestone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
 
-    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE = registerBlock("mossy_cut_cobblestone",
+    public static final RegistryObject<Block> CUT_MOSSY_COBBLESTONE = registerBlock("cut_mossy_cobblestone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
-    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE_STAIRS = registerBlock("mossy_cut_cobblestone_stairs",
-            () -> new StairBlock(() -> ModBlocks.MOSSY_CUT_COBBLESTONE.get().defaultBlockState(),
+    public static final RegistryObject<Block> CUT_MOSSY_COBBLESTONE_STAIRS = registerBlock("cut_mossy_cobblestone_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_MOSSY_COBBLESTONE.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
-    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE_SLAB = registerBlock("mossy_cut_cobblestone_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
-    public static final RegistryObject<Block> MOSSY_CUT_COBBLESTONE_WALL = registerBlock("mossy_cut_cobblestone_wall",
+    public static final RegistryObject<Block> CUT_MOSSY_COBBLESTONE_SLAB = registerBlock("cut_mossy_cobblestone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<Block> CUT_MOSSY_COBBLESTONE_WALL = registerBlock("cut_mossy_cobblestone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
 
     public static final RegistryObject<Block> CARVED_STONE = registerBlock("carved_stone",

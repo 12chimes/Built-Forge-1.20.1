@@ -114,11 +114,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.CUT_COBBLESTONE.get()));
         wallBlock(((WallBlock) ModBlocks.CUT_COBBLESTONE_WALL.get()), blockTexture(ModBlocks.CUT_COBBLESTONE.get()));
 
-        blockWithItem(ModBlocks.MOSSY_CUT_COBBLESTONE);
-        stairsBlock(((StairBlock) ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS.get()), blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()));
-        slabBlock(((SlabBlock) ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get()), blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()),
-                blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()));
-        wallBlock(((WallBlock) ModBlocks.MOSSY_CUT_COBBLESTONE_WALL.get()), blockTexture(ModBlocks.MOSSY_CUT_COBBLESTONE.get()));
+        blockWithItem(ModBlocks.CUT_MOSSY_COBBLESTONE);
+        stairsBlock(((StairBlock) ModBlocks.CUT_MOSSY_COBBLESTONE_STAIRS.get()), blockTexture(ModBlocks.CUT_MOSSY_COBBLESTONE.get()));
+        slabBlock(((SlabBlock) ModBlocks.CUT_MOSSY_COBBLESTONE_SLAB.get()), blockTexture(ModBlocks.CUT_MOSSY_COBBLESTONE.get()),
+                blockTexture(ModBlocks.CUT_MOSSY_COBBLESTONE.get()));
+        wallBlock(((WallBlock) ModBlocks.CUT_MOSSY_COBBLESTONE_WALL.get()), blockTexture(ModBlocks.CUT_MOSSY_COBBLESTONE.get()));
 
         simpleBlock(ModBlocks.CARVED_STONE.get(), models().orientable("carved_stone",
                 modLoc("block/carved_stone"), modLoc("block/carved_stone"), modLoc("block/carved_stone_top")));

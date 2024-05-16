@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "built:block/mossy_cut_cobblestone"
-  }
-}

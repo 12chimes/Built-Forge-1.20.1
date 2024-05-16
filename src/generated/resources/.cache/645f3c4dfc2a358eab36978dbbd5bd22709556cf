@@ -1,9 +1,9 @@
-// 1.20.1	2024-05-13T12:37:17.4598946	Tags for minecraft:block mod id built
+// 1.20.1	2024-05-15T15:47:39.3498178	Tags for minecraft:block mod id built
 177dec6a8cebba74105745829cef4e4b5f0878a1 data/forge/tags/blocks/glass.json
 0938aea7d2c5c5f624c218d3bb990c1d3c7f65d8 data/forge/tags/blocks/glass_panes.json
 fd648354951cd01b72336018c9430128412efa51 data/minecraft/tags/blocks/bamboo_blocks.json
-ff1871e550eea1191a39a9e9f6b8bf8e914c4875 data/minecraft/tags/blocks/mineable/pickaxe.json
+580c1750adbeabc50f731b89fed17f0e0dc6f255 data/minecraft/tags/blocks/mineable/pickaxe.json
 cb2b37dd5fcdb0a7696338dfb6e4978a42b74698 data/minecraft/tags/blocks/planks.json
-214b5232288a32e0352b7648369b799d53999c4f data/minecraft/tags/blocks/walls.json
+589f3b204abe9c0026d30150ba54ba5d72042698 data/minecraft/tags/blocks/walls.json
 cd49e8bf010555ee8487d15b8c517881c9cdbec9 data/minecraft/tags/blocks/wooden_slabs.json
 094fab815d62b3bfc766533698c136f7ad3afb97 data/minecraft/tags/blocks/wooden_stairs.json

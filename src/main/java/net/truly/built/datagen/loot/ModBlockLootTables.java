@@ -1,10 +1,5 @@
 package net.truly.built.datagen.loot;
 
-import net.minecraft.world.level.storage.loot.LootPool;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.truly.built.block.ModBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -122,11 +117,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.CUT_COBBLESTONE_SLAB.get()));
         this.dropSelf(ModBlocks.CUT_COBBLESTONE_WALL.get());
 
-        this.dropSelf(ModBlocks.MOSSY_CUT_COBBLESTONE.get());
-        this.dropSelf(ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS.get());
-        this.add(ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get(),
-                block -> createSlabItemTable(ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get()));
-        this.dropSelf(ModBlocks.MOSSY_CUT_COBBLESTONE_WALL.get());
+        this.dropSelf(ModBlocks.CUT_MOSSY_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.CUT_MOSSY_COBBLESTONE_STAIRS.get());
+        this.add(ModBlocks.CUT_MOSSY_COBBLESTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUT_MOSSY_COBBLESTONE_SLAB.get()));
+        this.dropSelf(ModBlocks.CUT_MOSSY_COBBLESTONE_WALL.get());
 
         this.dropSelf(ModBlocks.CARVED_STONE.get());
         this.dropSelf(ModBlocks.CARVED_GRANITE.get());
