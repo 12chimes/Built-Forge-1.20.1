@@ -65,9 +65,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.CUT_COBBLESTONE_SLAB);
         wallItem(ModBlocks.CUT_COBBLESTONE_WALL, ModBlocks.CUT_COBBLESTONE);
 
-        evenSimplerBlockItem(ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS);
-        evenSimplerBlockItem(ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB);
-        wallItem(ModBlocks.MOSSY_CUT_COBBLESTONE_WALL, ModBlocks.MOSSY_CUT_COBBLESTONE);
+        evenSimplerBlockItem(ModBlocks.CUT_MOSSY_COBBLESTONE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CUT_MOSSY_COBBLESTONE_SLAB);
+        wallItem(ModBlocks.CUT_MOSSY_COBBLESTONE_WALL, ModBlocks.CUT_MOSSY_COBBLESTONE);
 
         evenSimplerBlockItem(ModBlocks.CARVED_STONE);
         evenSimplerBlockItem(ModBlocks.CARVED_GRANITE);

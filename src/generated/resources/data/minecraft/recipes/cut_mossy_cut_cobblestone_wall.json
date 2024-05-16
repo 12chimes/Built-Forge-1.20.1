@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "built:mossy_cut_cobblestone"
+    "item": "built:cut_mossy_cobblestone"
   },
-  "result": "built:mossy_cut_cobblestone_wall"
+  "result": "built:cut_mossy_cobblestone_wall"
 }

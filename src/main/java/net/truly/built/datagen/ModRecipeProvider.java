@@ -570,7 +570,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //MOSSY CUT COBBLESTONE
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE.get(), 4)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE.get(), 4)
                 .pattern("##")
                 .pattern("##")
                 .define('#', Items.MOSSY_COBBLESTONE)
@@ -578,11 +578,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.MOSSY_COBBLESTONE),
-                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE.get())
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE.get())
                 .unlockedBy(getHasName(Items.MOSSY_COBBLESTONE), has(Items.MOSSY_COBBLESTONE))
                 .save(pWriter,"cut_mossy_cut_cobblestone");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MOSSY_CUT_COBBLESTONE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CUT_MOSSY_COBBLESTONE.get())
                 .pattern("#S")
                 .define('#', ModBlocks.CUT_COBBLESTONE.get())
                 .define('S', Items.VINE)
@@ -590,7 +590,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.VINE), has(Items.VINE))
                 .save(pWriter, "vine_mossy_cut_cobblestone");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MOSSY_CUT_COBBLESTONE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CUT_MOSSY_COBBLESTONE.get())
                 .pattern("#S")
                 .define('#', ModBlocks.CUT_COBBLESTONE.get())
                 .define('S', Items.MOSS_BLOCK)
@@ -598,54 +598,54 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.MOSS_BLOCK), has(Items.MOSS_BLOCK))
                 .save(pWriter, "moss_mossy_cut_cobblestone");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS.get(), 4)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_STAIRS.get(), 4)
                 .pattern("#  ")
                 .pattern("## ")
                 .pattern("###")
-                .define('#', ModBlocks.MOSSY_CUT_COBBLESTONE.get())
-                .unlockedBy(getHasName(ModBlocks.MOSSY_CUT_COBBLESTONE.get()), has(ModBlocks.MOSSY_CUT_COBBLESTONE.get()))
+                .define('#', ModBlocks.CUT_MOSSY_COBBLESTONE.get())
+                .unlockedBy(getHasName(ModBlocks.CUT_MOSSY_COBBLESTONE.get()), has(ModBlocks.CUT_MOSSY_COBBLESTONE.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get(), 6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_SLAB.get(), 6)
                 .pattern("###")
-                .define('#', ModBlocks.MOSSY_CUT_COBBLESTONE.get())
-                .unlockedBy(getHasName(ModBlocks.MOSSY_CUT_COBBLESTONE.get()), has(ModBlocks.MOSSY_CUT_COBBLESTONE.get()))
+                .define('#', ModBlocks.CUT_MOSSY_COBBLESTONE.get())
+                .unlockedBy(getHasName(ModBlocks.CUT_MOSSY_COBBLESTONE.get()), has(ModBlocks.CUT_MOSSY_COBBLESTONE.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_WALL.get(), 6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_WALL.get(), 6)
                 .pattern("###")
                 .pattern("###")
-                .define('#', ModBlocks.MOSSY_CUT_COBBLESTONE.get())
-                .unlockedBy(getHasName(ModBlocks.MOSSY_CUT_COBBLESTONE.get()), has(ModBlocks.MOSSY_CUT_COBBLESTONE.get()))
+                .define('#', ModBlocks.CUT_MOSSY_COBBLESTONE.get())
+                .unlockedBy(getHasName(ModBlocks.CUT_MOSSY_COBBLESTONE.get()), has(ModBlocks.CUT_MOSSY_COBBLESTONE.get()))
                 .save(pWriter);
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_CUT_COBBLESTONE.get()),
-                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS.get())
-                .unlockedBy(getHasName(ModBlocks.MOSSY_CUT_COBBLESTONE.get()), has(ModBlocks.MOSSY_CUT_COBBLESTONE.get()))
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CUT_MOSSY_COBBLESTONE.get()),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_STAIRS.get())
+                .unlockedBy(getHasName(ModBlocks.CUT_MOSSY_COBBLESTONE.get()), has(ModBlocks.CUT_MOSSY_COBBLESTONE.get()))
                 .save(pWriter, "cut_mossy_cut_cobblestone_stairs");
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.MOSSY_COBBLESTONE),
-                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_STAIRS.get())
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_STAIRS.get())
                 .unlockedBy(getHasName(Items.MOSSY_COBBLESTONE), has(Items.MOSSY_COBBLESTONE))
                 .save(pWriter, "cut2_mossy_cut_cobblestone_stairs");
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_CUT_COBBLESTONE.get()),
-                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.MOSSY_CUT_COBBLESTONE.get()), has(ModBlocks.MOSSY_CUT_COBBLESTONE.get()))
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CUT_MOSSY_COBBLESTONE.get()),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_SLAB.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.CUT_MOSSY_COBBLESTONE.get()), has(ModBlocks.CUT_MOSSY_COBBLESTONE.get()))
                 .save(pWriter, "cut_mossy_cut_cobblestone_slab");
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.MOSSY_COBBLESTONE),
-                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_SLAB.get(), 2)
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_SLAB.get(), 2)
                 .unlockedBy(getHasName(Items.MOSSY_COBBLESTONE), has(Items.MOSSY_COBBLESTONE))
                 .save(pWriter, "cut2_mossy_cut_cobblestone_slab");
 
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.MOSSY_CUT_COBBLESTONE.get()),
-                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_WALL.get())
-                .unlockedBy(getHasName(ModBlocks.MOSSY_CUT_COBBLESTONE.get()), has(ModBlocks.MOSSY_CUT_COBBLESTONE.get()))
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModBlocks.CUT_MOSSY_COBBLESTONE.get()),
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_WALL.get())
+                .unlockedBy(getHasName(ModBlocks.CUT_MOSSY_COBBLESTONE.get()), has(ModBlocks.CUT_MOSSY_COBBLESTONE.get()))
                 .save(pWriter, "cut_mossy_cut_cobblestone_wall");
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.MOSSY_COBBLESTONE),
-                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSSY_CUT_COBBLESTONE_WALL.get())
+                        RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_MOSSY_COBBLESTONE_WALL.get())
                 .unlockedBy(getHasName(Items.MOSSY_COBBLESTONE), has(Items.MOSSY_COBBLESTONE))
                 .save(pWriter, "cut2_mossy_cut_cobblestone_wall");
 
