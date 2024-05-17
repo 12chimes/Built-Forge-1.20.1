@@ -18,7 +18,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Built.MOD_ID);
 
-
     public static final RegistryObject<Block> OAK_COMPACT_PLANKS = BLOCKS.register("oak_compact_planks",
             () -> new ModFlammableWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> OAK_SHAKES = BLOCKS.register("oak_shakes",
@@ -173,10 +172,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLUE_TERRACOTTA)));
     public static final RegistryObject<Block> PURPLE_TERRACOTTA_TRIM = registerBlock("purple_terracotta_trim",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PURPLE_TERRACOTTA)));
-    public static final RegistryObject<Block> PINK_TERRACOTTA_TRIM = registerBlock("pink_terracotta_trim",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PINK_TERRACOTTA)));
     public static final RegistryObject<Block> MAGENTA_TERRACOTTA_TRIM = registerBlock("magenta_terracotta_trim",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MAGENTA_TERRACOTTA)));
+    public static final RegistryObject<Block> PINK_TERRACOTTA_TRIM = registerBlock("pink_terracotta_trim",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PINK_TERRACOTTA)));
 
 
 
