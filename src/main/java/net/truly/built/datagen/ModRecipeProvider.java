@@ -841,6 +841,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.CUT_STRIPPED_BAMBOO_BLOCK.get()), has(ModBlocks.CUT_STRIPPED_BAMBOO_BLOCK.get()))
                 .save(pWriter);
 
+        //MUD POT
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.MUD_POT.get())
+                .pattern(" # ")
+                .pattern("# #")
+                .pattern("###")
+                .define('#', Items.PACKED_MUD)
+                .unlockedBy(getHasName(Items.PACKED_MUD), has(Items.PACKED_MUD))
+                .save(pWriter);
+
+
         //POLISHED MUD
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_PACKED_MUD.get(), 4)
