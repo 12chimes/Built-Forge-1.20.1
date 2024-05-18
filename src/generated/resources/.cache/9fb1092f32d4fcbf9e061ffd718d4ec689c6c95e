@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-15T15:47:39.3468275	Recipes
+// 1.20.1	2024-05-18T12:57:41.2054282	Recipes
 b55c7fee909bdfd0ad863310f181144f6a1119c7 data/built/advancements/recipes/building_blocks/acacia_compact_planks.json
 72eefd8abfdba10c124953f806e9de7e7fe7ce7a data/built/advancements/recipes/building_blocks/acacia_shakes.json
 4ce408ebb441c18989726b26d9b3b38518c42ff4 data/built/advancements/recipes/building_blocks/bamboo_compact_planks.json
@@ -90,6 +90,7 @@ a6684accc3d0ac6819e102383a7bbb7ca2016975 data/built/advancements/recipes/buildin
 d2747012593d9923b4da92f2161b24c89e0b4b18 data/built/advancements/recipes/building_blocks/warped_shakes.json
 bc0d1fb4da80660897fc9ef07256dd481f5b0222 data/built/advancements/recipes/building_blocks/white_terracotta_trim.json
 940a80927041185732960c3b97fa86a74b945f6f data/built/advancements/recipes/building_blocks/yellow_terracotta_trim.json
+3a94d4cc801d21f6d808bfa06770abc276dcf1ff data/built/advancements/recipes/decorations/mud_pot.json
 c3b8c38f9a570399d87a46215b49322e2b7231f5 data/built/advancements/recipes/misc/framed_glass_pane.json
 1866c8085a42e7185563bec0ce76a4207e4ee420 data/built/recipes/acacia_compact_planks.json
 2fad19eb8c1cc5020bbcc1283757926f4dea3bde data/built/recipes/acacia_shakes.json
@@ -154,6 +155,7 @@ f51834c429a21c09ce8870d396377d6612ca42eb data/built/recipes/jungle_compact_plank
 278541d2c30b72cd29ef4b04f81d0a8856f78218 data/built/recipes/mossy_stone_shingles_slab.json
 0f169e4bcd159a36c16b6474cfee9c3bbfec02cc data/built/recipes/mossy_stone_shingles_stairs.json
 0555c8ff8a398e0263db266f2a62bec60b5ad42d data/built/recipes/mossy_stone_shingles_wall.json
+54ee0a6c88676184649436cbf261ca53302367c0 data/built/recipes/mud_pot.json
 b7c4d0607c9cea9f86c3cf00f1e3dcd9d16127ad data/built/recipes/mud_shingles.json
 281ab15929d9c0af8df6f6313ff08dc9d11f5497 data/built/recipes/mud_shingles_slab.json
 61327aa134e8be5b9a06141f11c94a75bc111ba8 data/built/recipes/mud_shingles_stairs.json
