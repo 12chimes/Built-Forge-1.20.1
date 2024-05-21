@@ -1,6 +1,7 @@
 package net.truly.built.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,7 +15,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Built.MOD_ID);
 
     public static final RegistryObject<Item> BUILT = ITEMS.register("built",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant()));
 
     public static final RegistryObject<Item> OAK_COMPACT_PLANKS = ITEMS.register("oak_compact_planks",
             () -> new FuelBlockItem(new Item.Properties(), 300, ModBlocks.OAK_COMPACT_PLANKS.get()));
