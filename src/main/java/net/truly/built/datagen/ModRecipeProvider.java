@@ -1265,6 +1265,5 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModBlocks.FRAMED_GLASS.get())
                 .unlockedBy(getHasName(ModBlocks.FRAMED_GLASS.get()), has(ModBlocks.FRAMED_GLASS_PANE.get()))
                 .save(pWriter);
-
     }
 }
