@@ -64,7 +64,7 @@ description='''${mod_description}'''
     side="BOTH"
 
 [modproperties.${mod_id}]
-    catalogueItemIcon="built:built"
+    catalogueImageIcon="built_icon.png"
     catalogueBackground="built_background.png"
 
 

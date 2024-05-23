@@ -16,7 +16,7 @@ public class ModCreativeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Built.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> BUILT_TAB = CREATIVE_MODE_TABS.register("built_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BUILT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.OAK_COMPACT_PLANKS.get()))
                     .title(Component.translatable("creativetab.built_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
